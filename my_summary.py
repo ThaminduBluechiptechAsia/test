@@ -7,16 +7,6 @@ def summa(para):
     text = ""
     for line in para:
         text = text + line.text
-
-
-    text = re.sub(r'Also Read', '', text)
-    text = re.sub(r'\n', '', text)
-    text = re.sub(r'-', ' - ', text)
-    text = re.sub(r'Y.S.', 'Y S', text)
-    clean_text = text.lower()
-    # print(clean_text)
-    # print("\n"
-
     sentence_list = nltk.sent_tokenize(text)
     # len(sentence_list)
     # print(sentence_list)
