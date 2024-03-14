@@ -8,8 +8,6 @@ def summa(para):
     for line in para:
         text = text + line.text
 
-    # print(text)
-    # print("\n")
 
     text = re.sub(r'Also Read', '', text)
     text = re.sub(r'\n', '', text)
@@ -17,13 +15,8 @@ def summa(para):
     text = re.sub(r'Y.S.', 'Y S', text)
     clean_text = text.lower()
     # print(clean_text)
-    # print("\n")
-    stopwords = nltk.corpus.stopwords.words('english')
-    stopwords = stopwords + [',', '(', ')', '“', '”', '.', '-', ':', '’', '~', '!', '`', '@', '#', '$', '%', '&', '*',
-                             '+', '/', ';', '<', '>', '?', '[', ']', '{', '}', '_']
-    # len(stopwords)
-    # print(stopwords)
-    # print("\n")
+    # print("\n"
+
     sentence_list = nltk.sent_tokenize(text)
     # len(sentence_list)
     # print(sentence_list)
