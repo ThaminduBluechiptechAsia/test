@@ -7,12 +7,6 @@ def summa(para):
     text = ""
     for line in para:
         text = text + line.text
-    stopwords = nltk.corpus.stopwords.words('english')
-    stopwords = stopwords + [',', '(', ')', '“', '”', '.', '-', ':', '’', '~', '!', '`', '@', '#', '$', '%', '&', '*',
-                             '+', '/', ';', '<', '>', '?', '[', ']', '{', '}', '_']
-    # len(stopwords)
-    # print(stopwords)
-    # print("\n")
     sentence_list = nltk.sent_tokenize(text)
     # len(sentence_list)
     # print(sentence_list)
